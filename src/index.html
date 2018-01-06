@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="tryit" >
+<head>
+	<title>Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+<div class="container">
+	
+	<div class="row">
+		
+		<div  ng-controller="contrydataCtrl" class="col-md-4">
+			<div>
+				Country List
+			</div>
+			<select>
+				<option ng-repeat="data in name">{{data.name}}</option>
+			</select>
+			<!-- <div ng-repeat="data in name">
+				<span>{{data.name}}</span>
+				<b>{{data.region}}</b>
+			</div> -->
+		</div>
+	</div> <!--row div-->
+</div> <!--container-->
+
+</body>
+</html>
